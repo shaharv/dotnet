@@ -12,7 +12,7 @@ in a specific PE (`.exe` or `.dll`), the following technique may come handy:
 
 This technique is very effective for debugging instrumentation issues, and IL in general, since:
 1. We can run `peverify` on the modified PE, which will verify the PE for correctness and will alert on erroneous IL code.
-2. It does not require modifying the agent code.
+2. It does not require modifying the profiler code.
 
 ### Steps
 

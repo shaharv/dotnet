@@ -88,7 +88,7 @@ If image binding was successful, the following would be printed out the log file
 
 **Note**: Ideally, successful binding should occur for all dependants (such as `mscorlib`), but it might succeed for some and fails for others, in which case you may want to troubleshoot.
 
-Additionally, when debugging a .NET program and stepping through the profiler API callbacks (i.e. debugging DNAgent), the `Debug` window, which displays the full path of each loaded DLL/native image, can indicate whether a native image was indeed loaded. If it was, it will be reported in the `Debug` window (after the `ModuleLoadStarted` callback is fired). For example:
+Additionally, when debugging a .NET program and stepping through the profiler API callbacks, the `Debug` window, which displays the full path of each loaded DLL/native image, can indicate whether a native image was indeed loaded. If it was, it will be reported in the `Debug` window (after the `ModuleLoadStarted` callback is fired). For example:
 
 ![Visual Studio Debug Output](images/ngen_vs2015_debug_output_window.jpg)
 
